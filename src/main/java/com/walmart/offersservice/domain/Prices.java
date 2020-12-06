@@ -15,7 +15,7 @@ public class Prices {
         this.appliedDiscount = appliedDiscount;
     }
 
-    public static Prices createBy(Integer amount, Integer discount) {
+    public static Prices createPricesBy(Integer amount, Integer discount) {
         return new Prices(amount, calculateDiscounted(amount, discount), discount);
     }
 

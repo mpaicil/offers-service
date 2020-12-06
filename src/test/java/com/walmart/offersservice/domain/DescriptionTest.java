@@ -12,7 +12,7 @@ class DescriptionTest {
     void createsDescriptionWithTwoCharactersRepeated() {
         ProductData productData = aProductData().build();
 
-        Description description = Description.createBy(productData);
+        Description description = Description.createDescriptionBy(productData);
 
         assertThat(description).isNotNull()
                 .hasFieldOrPropertyWithValue("text",productData.getDescription())

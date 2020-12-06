@@ -21,7 +21,7 @@ public class Description {
         this.vocalsRepeated = vocalsRepeated;
     }
 
-    public static Description createBy(ProductData data) {
+    public static Description createDescriptionBy(ProductData data) {
         return new Description(data.getDescription(), calculateVocalsRepeated(data).intValue());
     }
 

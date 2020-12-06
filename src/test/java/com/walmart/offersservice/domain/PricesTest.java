@@ -8,7 +8,7 @@ class PricesTest {
 
     @Test
     void createsPricesFromAmountAndDiscount() {
-        Prices prices = Prices.createBy(20000, 30);
+        Prices prices = Prices.createPricesBy(20000, 30);
 
         assertThat(prices).isNotNull()
                 .hasFieldOrPropertyWithValue("original",20000)
