@@ -17,7 +17,7 @@ import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 @ActiveProfiles("local")
 @ExtendWith(SpringExtension.class)
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, classes = OffersServiceApplication.class)
-class ProducstRepositoryIntegrationTest {
+class ProductsRepositoryIntegrationTest {
 
     public static final String EXAMPLE_WORD = "Televi";
 
