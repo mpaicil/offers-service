@@ -7,6 +7,7 @@ import lombok.Getter;
 @AllArgsConstructor
 public class ProductResponse {
 
+    private Integer id;
     private String brand;
     private String description;
     private PriceResponse prices;

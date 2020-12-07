@@ -7,8 +7,8 @@ import lombok.Getter;
 @AllArgsConstructor
 public class PriceResponse {
 
-    private Integer total;
-    private Integer discount;
-    private Integer total_final;
+    private Integer original;
+    private Integer discounted;
+    private Integer appliedDiscount;
 
 }

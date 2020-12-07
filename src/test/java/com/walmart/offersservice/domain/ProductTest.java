@@ -12,7 +12,7 @@ class ProductTest {
     void createsProductFromProductData() {
         ProductData productData = aProductData().build();
 
-        Product actualProduct = Product.createBy(productData);
+        Product actualProduct = Product.createProductBy(productData);
 
         assertThat(actualProduct).isNotNull()
                 .satisfies(product -> assertThat(product.getId()).isEqualTo(product.getId()))

@@ -6,11 +6,14 @@ import com.walmart.offersservice.presentation.endpoints.responses.ProductRespons
 import static com.walmart.offersservice.presentation.endpoints.utils.PriceResponseFixture.aPriceResponse;
 
 public final class ProductResponseFixture {
+
+    private Integer id;
     private String brand;
     private String description;
     private PriceResponse prices;
 
     private ProductResponseFixture() {
+        id = 150;
         brand = "Marca Acme";
         description = "luces crypto 80W";
         prices = aPriceResponse().build();
@@ -36,6 +39,6 @@ public final class ProductResponseFixture {
     }
 
     public ProductResponse build() {
-        return new ProductResponse(brand, description, prices);
+        return new ProductResponse(id, brand, description, prices);
     }
 }

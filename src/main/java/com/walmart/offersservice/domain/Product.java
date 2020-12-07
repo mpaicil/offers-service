@@ -21,7 +21,7 @@ public class Product {
         this.prices = prices;
     }
 
-    public static Product createBy(ProductData data) {
+    public static Product createProductBy(ProductData data) {
         Description description = createDescriptionBy(data);
 
         return new Product(data.getId(),
