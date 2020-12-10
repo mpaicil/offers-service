@@ -15,4 +15,14 @@ class PricesTest {
                 .hasFieldOrPropertyWithValue("discounted", 14000)
                 .hasFieldOrPropertyWithValue("appliedDiscount",30);
     }
+
+    @Test
+    void createsPricesWithTheLimitOfDiscount() {
+        Prices prices = Prices.createPricesBy(20000, 60);
+
+        assertThat(prices).isNotNull()
+                .hasFieldOrPropertyWithValue("original",20000)
+                .hasFieldOrPropertyWithValue("discounted", 10000)
+                .hasFieldOrPropertyWithValue("appliedDiscount",50);
+    }
 }
