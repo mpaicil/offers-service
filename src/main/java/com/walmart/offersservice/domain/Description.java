@@ -11,7 +11,11 @@ import static java.util.Arrays.asList;
 @Getter
 public class Description {
 
-    private static final List<Character> VOCALS = asList('a', 'e', 'i', 'o', 'u');
+    private static final List<Character> VOCALS = asList(
+            'a', 'e', 'i', 'o', 'u',
+            'á', 'é', 'í', 'ó', 'ú',
+            'A', 'E', 'I', 'O', 'U',
+            'Á', 'É', 'Í', 'Ó', 'Ú');
 
     private String text;
     private Integer vocalsRepeated;

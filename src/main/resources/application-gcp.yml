@@ -1,0 +1,9 @@
+spring:
+  data:
+    mongodb:
+      database: desafio_walmart
+      host: 10.47.248.33
+      port: 27017
+      username: brandDiscountsUser
+      password: brandDiscountsPassword
+      authentication-database: admin
