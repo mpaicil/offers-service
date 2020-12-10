@@ -6,8 +6,9 @@ Servicios que entrega productos en descuento en base a la repetición de sus voc
 
 Para poder usar el servicio de forma local es necesario levantar la BD con las instrucciones dadas y asegurar que la BD esta expuesta en el puerto 27017, luego ejecutar el siguiente comando:
 
-./gradlew bootRun 
-
+```sh
+git checkout master && ./gradlew bootRun 
+```
 El comand señalado carga el perfil local
 
 # Nota:
